@@ -9,7 +9,7 @@ import org.jsoup.nodes.Element
 
 class Kissasian : MainAPI() {
     override var mainUrl = "https://kissasian.pe"
-    override var name = "Kissasian"
+    override var name = "Kissasian_pe"
     override val hasMainPage = true
     override val hasDownloadSupport = true
     override val supportedTypes = setOf(TvType.AsianDrama)
@@ -27,10 +27,18 @@ class Kissasian : MainAPI() {
     override val mainPage = mainPageOf(
         "drama-list/ongoing.html?page=" to "Drama Ongoing",
         "drama-list/completed.html?page=" to "Drama Completed",
+        "drama-list/new-hot.html?page=" to "New & Hot Drama",
+        "drama-list/latest-update.html?page=" to "Latest Update",
+        "drama-list/most-popular.html?page=" to "Popular Drama",
         "genre/variety/?page=" to "Variety Show",
         "genre/romance/?page=" to "Romance",
         "genre/action/?page=" to "Action",
         "genre/mystery/?page=" to "Mystery",
+        "genre/horror/?page=" to "Horror",
+        "genre/fantasy/?page=" to "Fantasy",
+        "genre/supernatural/?page=" to "Supernatural",
+        "genre/Wuxia/?page=" to "Wuxia",
+        "genre/time-travel/?page=" to "Time Travel",
     )
 
     override suspend fun getMainPage(page: Int, request: MainPageRequest): HomePageResponse {
