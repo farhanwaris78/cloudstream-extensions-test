@@ -1,4 +1,4 @@
-package com.farhanwaris78
+package com.hexated
 
 import com.lagradost.cloudstream3.*
 import com.lagradost.cloudstream3.extractors.helper.GogoHelper
