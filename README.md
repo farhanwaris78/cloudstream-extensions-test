@@ -1,6 +1,6 @@
 <div align="center">
 
-# *Hexated-Extensions*
+# *Extensions*
 
 ##
 
